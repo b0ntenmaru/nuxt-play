@@ -3,7 +3,5 @@ import Link from '@/components/Link.vue';
 
 storiesOf('Link', module).add('Link', () => ({
   components: { Link },
-  template: `
-    <Link />
-  `,
+  template: `<Link />`,
 }));
