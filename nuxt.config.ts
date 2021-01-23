@@ -55,7 +55,7 @@ export default {
   },
 
   storybook: {
-    stories: ['@/stories/**/*.stories.ts'],
+    stories: ['@/stories/**/*.stories.js'],
     decorators: [
       // VApp decorator for Vuetify
       '<v-app><v-main><v-container><story /></v-container></v-main></v-app>',
