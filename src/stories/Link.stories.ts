@@ -1,5 +1,9 @@
-export default {
-  title: 'sample/Link',
-};
+import { storiesOf } from '@storybook/vue';
+import Link from '@/components/Link.vue';
 
-export const Link = () => '<Link />';
+storiesOf('Link', module).add('Link', () => ({
+  components: { Link },
+  template: `
+    <Link />
+  `,
+}));
