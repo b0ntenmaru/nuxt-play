@@ -56,6 +56,10 @@ export default {
 
   storybook: {
     stories: ['@/stories/**/*.stories.ts'],
+    decorators: [
+      // VApp decorator for Vuetify
+      '<v-app><v-main><v-container><story /></v-container></v-main></v-app>',
+    ],
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
