@@ -1,5 +1,5 @@
 export default {
-  title: 'Link',
+  title: 'sample/Link',
 };
 
 export const Link = () => '<Link />';
