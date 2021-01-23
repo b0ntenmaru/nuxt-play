@@ -1,20 +1,12 @@
 import { action } from '@storybook/addon-actions';
-import PrimaryButton from '@/components/PrimaryButton.vue';
+import PrimaryButtonComponent from '@/components/PrimaryButton.vue';
 
 export default {
   title: 'buttons/PrimaryButton',
-  component: PrimaryButton,
-  argTypes: {
-    isDisabled: { control: 'boolean' },
-    buttonText: {
-      control: 'text',
-      defaultValue: 'ボタン',
-    },
-  },
 };
 
-export const PrimaryButtonComponent = () => ({
-  components: { PrimaryButton },
+export const PrimaryButton = () => ({
+  components: { PrimaryButtonComponent },
   props: {
     isDisabled: {
       type: Boolean,
@@ -26,10 +18,18 @@ export const PrimaryButtonComponent = () => ({
     },
   },
   template:
-    '<PrimaryButton @click="clickme" :isDisabled="isDisabled">{{ isDisabled }}</PrimaryButton>',
+    '<PrimaryButtonComponent @click="clickme" :isDisabled="isDisabled">{{ buttonText }}</PrimaryButtonComponent>',
   methods: {
     clickme() {
       action('button-click')();
     },
   },
 });
+
+PrimaryButton.argTypes = {
+  isDisabled: { control: 'boolean' },
+  buttonText: {
+    control: 'text',
+    defaultValue: 'ボタン',
+  },
+};
