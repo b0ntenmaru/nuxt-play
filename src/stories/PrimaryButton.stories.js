@@ -2,7 +2,7 @@ import { action } from '@storybook/addon-actions';
 import PrimaryButtonComponent from '@/components/PrimaryButton.vue';
 
 export default {
-  title: 'buttons/PrimaryButton',
+  title: 'buttons',
 };
 
 export const PrimaryButton = () => ({
