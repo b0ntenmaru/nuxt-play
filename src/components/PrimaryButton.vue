@@ -6,6 +6,7 @@
     :class="{ disabled: isDisabled }"
     @click="click"
   >
+    <v-icon large>fas fa-plus</v-icon>
     <slot />
   </v-btn>
 </template>
