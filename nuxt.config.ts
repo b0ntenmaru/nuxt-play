@@ -19,7 +19,7 @@ export default {
   css: ['@/assets/base.scss'],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: ['plugins/vuetifyFontawesome'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: false,
@@ -37,6 +37,9 @@ export default {
 
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
+    icons: {
+      iconfont: 'fa',
+    },
     customVariables: ['~/assets/variables.scss'],
     theme: {
       light: true,
